@@ -1,5 +1,4 @@
 <script>
-
 export default {
     props: {
         name: String,
@@ -8,11 +7,9 @@ export default {
         description: String
     }
 }
-
 </script>
 
 <template>
-
     <div class="list__item">
         <div class="item__name">
             <a href={{ link }}>{{ name }}</a>
@@ -23,10 +20,9 @@ export default {
         <div class="item__arrow-toggle"></div>
         <div class="item__description">{{ description }}</div>
     </div>
-
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .item__name {
     font-family: "Rubik";
     font-size: 5rem;

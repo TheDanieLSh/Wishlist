@@ -10,7 +10,7 @@ import Item from './Item.vue'
 
 </script>
 
-<style scoped>
+<style>
 
 .list {
     position: relative;
