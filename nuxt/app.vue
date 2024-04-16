@@ -1,6 +1,6 @@
 <template>
   <header>
-
+    <Authorisation />
   </header>
   <main>
     <List />
@@ -11,14 +11,13 @@
 </template>
 
 <script>
-
+import Authorisation from './components/Authorisation.vue';
 import List from './components/List.vue'
-
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import 'reset-css';
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
     margin: 0;
@@ -31,5 +30,14 @@ html {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+main {
+  display: flex;
+  justify-content: center;
 }
 </style>

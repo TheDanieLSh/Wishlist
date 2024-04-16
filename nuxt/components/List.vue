@@ -15,7 +15,8 @@ import Item from './Item.vue'
 .list {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    width: 95%;
     margin-top: 20rem;
     font-family: "Rubik";
 }
