@@ -2,8 +2,8 @@
     <div class="auth">
         <h1>Авторизация</h1>
         <form>
-            <input type="text" name="login" placeholder="Логин" />
-            <input type="text" name="password" placeholder="Пароль" />
+            <input type="text" method="post" name="login" placeholder="Логин" />
+            <input type="text" method="post" name="password" placeholder="Пароль" />
         </form>
     </div>
 </template>
