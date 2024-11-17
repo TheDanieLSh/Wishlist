@@ -1,4 +1,4 @@
-interface form {
+interface Iform {
     'login': string,
     'password': string
 }
@@ -7,7 +7,7 @@ export default defineEventHandler(async event => {
     const body = await readMultipartFormData(event) ?? [];
     console.log(body);
 
-    const formData: form = body.reduce((acc, cur) => {
+    const formData: Iform = body.reduce((acc, cur) => {
         acc[cur['name']] = cur.data.toString();
         return acc
     }, {})
